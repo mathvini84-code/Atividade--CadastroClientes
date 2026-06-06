@@ -12,7 +12,7 @@ body {
 .mainContainer {
     display: flex;
     background-color: rgba(0, 153, 255, 0.384);
-    margin: 75px 350px 100px 350px;
+    margin: 75px 350px 75px 350px;
     border-radius: 10px;
 }
 
@@ -93,7 +93,7 @@ input {
     flex-direction: column;
     background-color: white;
     width: 280px;
-    height: 240px;
+    height: 255px;
     margin: 5px 15px 0px 15px;
     border: 1px solid black;
     border-radius: 10px;
@@ -103,15 +103,16 @@ input {
 #userList {
     background: #e7e7e7;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+    border-radius: 10px;
+    font-weight: 550;
 }
 
 #userList li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    padding-left: 6px;
 }
 
 #removeItem {
@@ -121,4 +122,20 @@ input {
     border: none;
     border-radius: 10px;
     font-weight: 600;
+}
+
+#removeItem:hover {
+    background-color: rgb(134, 57, 57);
+    user-select: none;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 23px;
+    background: black;
+    height: 56px;
+    color: #f9f9f9;
+    font-size: 10px;
 }
